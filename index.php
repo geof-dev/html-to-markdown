@@ -23,6 +23,11 @@ if (isset($_GET['url']) ) {
 		$scriptNode->getNode(0)->parentNode->removeChild($scriptNode->getNode(0));
 	});
 
+	// Remove style nodes
+	$bodyNode->filter('style')->each(function (Crawler $styleNode) {
+		$styleNode->getNode(0)->parentNode->removeChild($styleNode->getNode(0));
+	});
+
 	// HTML content of the body node
 	$bodyHtml = $bodyNode->html();
 
