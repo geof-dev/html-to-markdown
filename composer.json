@@ -1,0 +1,7 @@
+{
+    "require": {
+        "symfony/dom-crawler": "^6.3",
+        "league/html-to-markdown": "^5.1",
+        "symfony/css-selector": "^6.3"
+    }
+}
